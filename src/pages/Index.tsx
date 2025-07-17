@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect, useState } from 'react';
+import { Hero } from '@/components/Hero';
+import { ServicesStrip } from '@/components/ServicesStrip';
+import { DifferenceSection } from '@/components/DifferenceSection';
+import { TestimonialCarousel } from '@/components/TestimonialCarousel';
+import { StickyFooter } from '@/components/StickyFooter';
+import { WhatsAppFloat } from '@/components/WhatsAppFloat';
 
 const Index = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white overflow-x-hidden">
+      <Hero scrollY={scrollY} />
+      <ServicesStrip />
+      <DifferenceSection />
+      <TestimonialCarousel />
+      <WhatsAppFloat />
+      <StickyFooter />
     </div>
   );
 };
