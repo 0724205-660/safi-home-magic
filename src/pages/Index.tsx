@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { ServicesStrip } from '@/components/ServicesStrip';
 import { DifferenceSection } from '@/components/DifferenceSection';
@@ -18,6 +19,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
+      <Navigation />
       <Hero scrollY={scrollY} />
       <ServicesStrip />
       <DifferenceSection />

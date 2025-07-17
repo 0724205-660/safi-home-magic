@@ -49,9 +49,9 @@ export const Hero = ({ scrollY }: HeroProps) => {
             </span>
           </div>
 
-          {/* Swahili tagline */}
-          <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto italic">
-            "Tunatoa huduma za usafi wa hali ya juu. Karibu Cleancare!"
+          {/* Professional tagline */}
+          <p className="text-lg text-gray-700 mb-12 max-w-2xl mx-auto">
+            Premium cleaning services with same-day availability. Professional, reliable, and thorough.
           </p>
 
           {/* CTA Button */}

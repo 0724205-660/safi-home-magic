@@ -12,7 +12,7 @@ const differences = [
   {
     icon: DollarSign,
     title: 'Transparent Pricing',
-    description: 'No hidden fees, no surprises. What we quote is what you pay. Hakuna stress.',
+    description: 'No hidden fees, no surprises. What we quote is what you pay. Completely transparent.',
     highlight: 'Fixed pricing, always'
   },
   {
@@ -103,7 +103,7 @@ export const DifferenceSection = () => {
         <div className="text-center mt-20">
           <div className="inline-block bg-gray-900 text-white px-8 py-4 rounded-2xl">
             <p className="text-lg">
-              <span className="font-bold">Tunajua</span> you have options. 
+              <span className="font-bold">We know</span> you have options. 
               <span className="text-emerald-400 font-semibold"> Choose quality.</span>
             </p>
           </div>

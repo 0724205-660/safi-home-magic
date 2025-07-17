@@ -6,7 +6,7 @@ const services = [
   {
     icon: Sofa,
     title: 'Sofa Deep Clean',
-    description: 'Msafi kama mpya! We restore your furniture to like-new condition.',
+    description: 'Professional restoration service! We restore your furniture to like-new condition.',
     duration: '2-3 hours',
     price: 'from KES 2,500',
     color: 'emerald'
@@ -64,10 +64,10 @@ export const ServicesStrip = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <h2 className="text-5xl font-black text-gray-900 mb-4">
-            Our <span className="text-emerald-600">Safi</span> Services
+            Our <span className="text-emerald-600">Professional</span> Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Professional cleaning solutions that transform your space
+            Expert cleaning solutions that transform your space
           </p>
         </div>
 
@@ -126,7 +126,7 @@ export const ServicesStrip = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-lg text-gray-600 mb-4">
-            Need something custom? <span className="font-semibold">Tuko hapa</span> for you.
+            Need something custom? <span className="font-semibold">We're here</span> for you.
           </p>
           <button className="text-emerald-600 hover:text-emerald-700 font-bold text-lg hover:underline transition-colors">
             Get Custom Quote →
